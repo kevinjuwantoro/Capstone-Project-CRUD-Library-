@@ -1,0 +1,39 @@
+#Fungsi mengembalikan buku
+
+def return_buku():
+    input_return = int(input('''Menu Mengembalikan Buku:
+1. Mengembalikan Buku
+2. Kembali ke menu utama
+Masukkan angka menu yang ingin Anda jalankan: '''))
+
+    if input_return == 1:
+        Tabel_Daftar_Buku_Keranjang(Keranjang_Buku)  #keranjang buku sebagai variabel sementara. 
+        Mengembalikan_Buku = str(input("\tMasukkan ID Buku yang ingin Anda kembalikan: "))
+        list_value = [str(value) for data_buku in Keranjang_Buku for value in data_buku.values()]
+
+        if Mengembalikan_Buku not in list_value:
+            print("\n\t Maaf, Data yang ingin Anda kembalikan tidak ada. Silahkan kembalikan Buku yang tersedia!")
+
+        else:
+            print("\n\t Data yang ingin Anda kembalikan tersedia!")
+            informasi_buku = CariDaftar(Mengembalikan_Buku)
+            Tabel_Daftar_Buku(informasi_buku)
+
+            Jumlah_Kembali = int(input("\n\t Berapa buku yang ingin Anda kembalikan?: "))
+
+            for buku in Keranjang_Buku:
+                if buku["ID_Buku"] == Mengembalikan_Buku:
+                    if Jumlah_Kembali > buku["Qty"]:
+                        print("\n\t Jumlah buku yang ingin dikembalikan melebihi yang dipinjam.")
+                    else:
+                        buku["Qty"] -= Jumlah_Kembali
+                        informasi_buku[0]["stok_buku"] += Jumlah_Kembali
+                        print("\n\t Buku yang Anda pinjam berhasil dikembalikan!")
+                        Tabel_Daftar_Buku_Keranjang(Keranjang_Buku)
+                        
+
+    elif input_return == 2:
+        Menu()
+    else:
+        print("\n\t Tidak ada data yang tersedia, silahkan masukkan angka yang tersedia\n")
+    return_buku()
