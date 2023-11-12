@@ -1,0 +1,45 @@
+# 1A. Kerangka atau template untuk menampilkan tabel Daftar Buku di perpusatakaan Juwantoro  
+
+# CARA otomatis membuat tabel utama menggunakan tabulate agar tabel rapi.
+from tabulate import tabulate
+
+def Tabel_Daftar_Buku(list_Data_Buku):
+    headers = ["ID_Buku", "Judul_Buku", "Penulis", "Penerbit", "Genre", "stok_buku"]
+    table_data = []
+
+    for data in list_Data_Buku:
+        baris = [data["ID_Buku"], data["Judul_Buku"], data["Penulis"], data["Penerbit"], data["Genre"], data["stok_buku"]]
+        table_data.append(baris)
+
+    print(tabulate(table_data, headers, tablefmt="grid"))
+
+
+# CARA otomatis menggunakan tabulate untuk menunjukkan daftar sebelum di update 
+from tabulate import tabulate
+
+def Tabel_Daftar_Buku_Update(list_Data, x, Data_Baru):
+    headers = ["ID_Buku", "Judul_Buku", "Penulis", "Penerbit", "Genre", "stok_buku"]
+    table_data = []
+
+    for data in list_Data:
+        baris = [data["ID_Buku"], data["Judul_Buku"], data["Penulis"], data["Penerbit"], data["Genre"], data["stok_buku"]]
+        table_data.append(baris)
+
+    for baris in table_data:
+        baris[x - 1] = Data_Baru
+
+    print(tabulate(table_data, headers=headers, tablefmt="grid"))
+
+
+# CARA otomatis menggunakan tabulate untuk menunjukkan tabel keranjang
+from tabulate import tabulate
+
+def Tabel_Daftar_Buku_Keranjang(list_Data):
+    headers = ["ID_Buku", "Judul_Buku", "Qty","Tanggal_Pinjam"]
+    table_data = []
+
+    for data in list_Data:
+        baris = [data["ID_Buku"], data["Judul_Buku"], data["Qty"], data["Tanggal_Pinjam"]]
+        table_data.append(baris)
+
+    print(tabulate(table_data, headers=headers, tablefmt="grid"))
