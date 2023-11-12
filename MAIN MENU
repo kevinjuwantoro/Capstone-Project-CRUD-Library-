@@ -1,0 +1,35 @@
+# Fungsi menu utama
+
+def Menu():
+    while True:
+        pilihanMenu = input('''
+Selamat Datang di Perpustakaan Juwantoro
+
+List Menu :
+1. Menampilkan Daftar Buku
+2. Menambah Daftar Buku
+3. Mengubah Daftar Buku
+4. Menghapus Daftar Buku
+5. Meminjam Buku
+6. Mengembalikan Buku
+7. Exit Program
+
+Masukkan angka Menu yang ingin Anda jalankan : ''')
+
+        if(pilihanMenu == "1") :
+            read()
+        elif(pilihanMenu == "2") :
+            add(List_Daftar_Buku)
+        elif(pilihanMenu == "3") :
+            update()
+        elif(pilihanMenu == "4") :
+            delete()
+        elif(pilihanMenu == "5") :
+            borrow()
+        elif(pilihanMenu == "6") :
+            return_buku()
+        else:
+            Menu()
+
+# Memanggil Menu utama
+Menu()
