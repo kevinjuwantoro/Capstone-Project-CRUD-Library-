@@ -1,0 +1,31 @@
+# Fungsi menghapus daftar buku
+
+def delete():
+    input_Delete = (int(input('''Menu Menghapus Daftar Buku:
+1. Menghapus Daftar Buku
+2. Kembali ke menu utama
+Masukkan angka menu yang ingin Anda jalankan:''')))
+    
+    
+    if input_Delete == 1:
+        Delete_Buku = str(input("\tMasukkan ID Buku yang ingin Anda ubah:"))
+        list_value  = [str(value) for data_buku in List_Daftar_Buku for value in data_buku.values()]
+        if Delete_Buku not in list_value:
+            print("\n\t Maaf, Data yang ingin Anda hapus tidak ada. Silahkan menghapuskan data yang tersedia!")
+
+        else:
+            CariDaftar(Delete_Buku)
+            Tabel_Daftar_Buku(CariDaftar(Delete_Buku))
+            Menghapus = input("\n\t Hapus Data (Ya/Tidak)?").lower()
+            if Menghapus == "ya":            
+                for item in CariDaftar(Delete_Buku): 
+                    List_Daftar_Buku.remove(item)
+                print("\n\t Data yang ingin Anda hapus telah berhasil terhapus!")
+
+            else: 
+                print("\n\t Data tidak berhasil terhapus!")
+    elif input_Delete == 2:
+        Menu()
+    else:
+        print("\n\tTidak ada data yang tersedia, silahkan masukkan angka yang tersedia\n")
+    delete()
