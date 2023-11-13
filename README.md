@@ -1,4 +1,4 @@
-# Aplikasi CRUD Perpusatakaan Purwadhika
+# Aplikasi CRUD Perpustakaan Purwadhika
     Aplikasi ini dirancang untuk mempermudah pengelolaan daftar buku di perpustakaan. 
     Dengan fitur-fitur yang disediakan, Anda dapat dengan mudah menambahkan, mengubah, menghapus buku, serta melakukan peminjaman dan pengembalian buku.
 
@@ -57,5 +57,5 @@
 
 # 7. Menu Keluar Aplikasi Perpustakaan
     Pada navigasi yang terakhir ini, apabila user memasukan input 7, maka pengguna akan keluar dari program. 
-    Pada aplikasi ini kita dapat menggunakan fungsi untuk menjalankan fitur CRUD (Create, Read, Update dan Delete) untuk mengelola daftar buku di perpusatakaan.
+    Pada aplikasi ini kita dapat menggunakan fungsi untuk menjalankan fitur CRUD (Create, Read, Update dan Delete) untuk mengelola daftar buku di perpustakaan.
 
