@@ -22,7 +22,7 @@
 
 # 2. Menambah Aplikasi Perpustakaan 
 
-    Pada menu ini, dengan menu nomor 2 (menambah daftar buku), user akan diminta untuk memasukkan informasi seperti ID Buku, Judul Buku, Penulis, Penerbit, Genre, dan Stok Buku jika memenuhi syarat dan ketentuan. 
+    Pada menu ini, dengan menu nomor 2 (menambah daftar buku), user akan diminta untuk memasukkan informasi seperti ID Buku, Judul Buku, Penulis, Penerbit, Genre, dan Stok Buku jika memenuhi           syarat dan ketentuan. 
     Dimana ID Buku tidak boleh sama dengan ID Buku yang sudah tersedia di Perpusatakaan agar tidak terjadinya kode ID Buku yang duplikat. 
     Setelah memenuhi syarat, User dapat menambahkan Buku yang diinginkan ke dalam Aplikasi. 
     Setelah itu, User diminta untuk apakah Anda ingin untuk menyimpan ke dalam sistem jika User menekan Iya maka akans secara otomatis tersimpan ke dalam sistem.
@@ -47,7 +47,7 @@
     
 # 5. Meminjam Aplikasi Perpustakaan 
     Pada menu ini, dengan menu nomor 5(meminjam buku), user akan diminta untuk memasukkan ID Buku yang ingin dipinjam sesuai atau yang terdapat di sistem. 
-    Setelah menambah buku yang ingin dipinjam ke dalam keranjang maka akan ditanya berapa jumlah buku yang ingin dipinjam dimana apabila jumlah yang dipinjam lebih banyak dari stok yang ada maka tentu tidak akan bisa karena melebihi batas stok. 
+    Setelah menambah buku yang ingin dipinjam ke dalam keranjang maka akan ditanya berapa jumlah buku yang ingin dipinjam dimana apabila jumlah yang dipinjam lebih banyak dari stok yang ada maka       tentu tidak akan bisa karena melebihi batas stok. 
     Sedangkan apabila jumlah yang dipinjam lebih sedikit dari stok buku yang tersedia maka akan muncul pesan untuk melakukan konfirmasi pinjaman buku yang ingin dipinjam.
 
 # 6. Mengembalikkan Aplikasi Perpusatakaan
@@ -58,5 +58,5 @@
 # 7. Menu Keluar Aplikasi Perpustakaan
     Pada navigasi yang terakhir ini, apabila user memasukan input 7, maka pengguna akan keluar dari program.
     
-    Demikian aplikasi yang dibuat menggunakan python untuk mengelola nilai siswa. Pada aplikasi ini kita dapat menggunakan fungsi untuk menjalankan fitur CRUD (Create, Read, Update dan Delete) untuk mengelola nilai-nilai siswa.
+    Demikian aplikasi yang dibuat menggunakan python untuk mengelola nilai siswa. Pada aplikasi ini kita dapat menggunakan fungsi untuk menjalankan fitur CRUD (Create, Read, Update dan Delete)         untuk mengelola daftar buku di perpusatakaan.
 
