@@ -56,7 +56,5 @@
     Setelah, user mengembalikkan jumlah buku yang sesuai tidak melebihi dari stok buku maka akan muncul pesan Buku yang Anda pinjam berhasil dikembalikan!
 
 # 7. Menu Keluar Aplikasi Perpustakaan
-    Pada navigasi yang terakhir ini, apabila user memasukan input 7, maka pengguna akan keluar dari program.
-    
-    Demikian aplikasi yang dibuat menggunakan python untuk mengelola nilai siswa. Pada aplikasi ini kita dapat menggunakan fungsi untuk menjalankan fitur CRUD (Create, Read, Update dan Delete)         untuk mengelola daftar buku di perpusatakaan.
+    Pada navigasi yang terakhir ini, apabila user memasukan input 7, maka pengguna akan keluar dari program. Pada aplikasi ini kita dapat menggunakan fungsi untuk menjalankan fitur CRUD (Create,       Read, Update dan Delete) untuk mengelola daftar buku di perpusatakaan.
 
