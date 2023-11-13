@@ -17,7 +17,7 @@
 # 1. Menampilkan Daftar Buku 
 
     Pada menu ini, dengan memilih menu nomor 1 (Tampilkan semua buku), user dapat menampilkan daftar buku.
-    Daftar buku dapat ditampilkan secara keseluruhan atau dapat memilih daftar buku menurut ID Buku yang diinginkan melalui menu 2 (Menari Buku).
+    Daftar buku dapat ditampilkan secara keseluruhan atau dapat memilih daftar buku menurut ID Buku yang diinginkan melalui menu 2 (Mencari Buku).
   
 
 # 2. Menambah Aplikasi Perpustakaan 
